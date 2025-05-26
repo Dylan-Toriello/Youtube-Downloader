@@ -66,7 +66,7 @@ def startDownload():
         finishLabel.configure(text=e, text_color = "red")
         
     
- 
+# Shows percentage downloaded
 def on_progress(stream, chunk, bytes_remaining):
     total_size = stream.filesize
     bytes_downloaded = total_size - bytes_remaining
